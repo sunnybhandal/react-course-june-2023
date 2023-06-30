@@ -1,4 +1,5 @@
 import Nav from "@components/Nav";
+import Provider from "@components/Provider";
 import "@styles/globals.css";
 
 export const metadata = {
@@ -8,7 +9,7 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
   return (
-    <html Lang="en">
+    <html lang="en">
       <body>
         <Provider>
           <div className="main">
