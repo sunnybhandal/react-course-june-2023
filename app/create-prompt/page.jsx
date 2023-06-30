@@ -10,7 +10,9 @@ const CreatePrompt = () => {
     prompt: "",
     tag: "",
   });
-  const createPrompt = async (e) => {};
+  const createPrompt = async (e) => {
+    e.preventDefault();
+  };
 
   return (
     <Form
