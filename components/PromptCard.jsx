@@ -46,6 +46,12 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
       <p onClick={() => handleTagClick && handleTagClick(post.tag)}>
         {post.tag}
       </p>
+      {session?.user.id === post.creator._id && pathName === "/profile" && (
+        <div>
+          <p onClick={handleEdit}>Edit</p>
+          <p onClick={handleDelete}>Edit</p>
+        </div>
+      )}
     </div>
   );
 };
